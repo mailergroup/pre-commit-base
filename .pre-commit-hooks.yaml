@@ -5,3 +5,10 @@
   description: Generates ConfigMap manifests from source files
   always_run: true
   stages: [commit-msg]
+- id: pre-commit-generate-alert-rulesets
+  name: Generate Alert Rulesets
+  entry: alerts/generate-rulesets.sh
+  language: script
+  description: Generates AlertManager manifests from source files
+  always_run: true
+  stages: [commit-msg]
