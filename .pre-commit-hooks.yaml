@@ -12,3 +12,10 @@
   description: Generates AlertManager manifests from source files
   always_run: true
   stages: [commit-msg]
+- id: pre-commit-lint-alert-rulesets
+  name: Lint Alert Rulesets using Pint
+  entry: pint/lint.sh
+  language: script
+  description: Runs pint against source AlertManager files
+  always_run: true
+  stages: [commit-msg]
