@@ -4,14 +4,19 @@ ignore: |
 extends: default
 rules:
   truthy:
-    allowed-values: ["true", "false", "on"]
+    allowed-values: ["true", "false"]
   comments:
+    require-starting-space: true
+    ignore-shebangs: true
     min-spaces-from-content: 1
+  comments-indentation: {}
   line-length: disable
   braces:
-    min-spaces-inside: 0
-    max-spaces-inside: 1
+    forbid: true
   brackets:
-    min-spaces-inside: 0
-    max-spaces-inside: 0
-  indentation: enable
+    forbid: true
+  indentation:
+    spaces: 2
+  quoted-strings:
+    quote-type: double
+    required: only-when-needed
