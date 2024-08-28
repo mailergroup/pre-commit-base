@@ -4,7 +4,9 @@ ignore: |
 extends: default
 rules:
   truthy:
-    allowed-values: ["true", "false"]
+    allowed-values:
+      - "true"
+      - "false"
   comments:
     require-starting-space: true
     ignore-shebangs: true
