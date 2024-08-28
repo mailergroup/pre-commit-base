@@ -12,9 +12,9 @@ rules:
   comments-indentation: {}
   line-length: disable
   braces:
-    forbid: true
+    forbid: non-empty
   brackets:
-    forbid: true
+    forbid: non-empty
   indentation:
     spaces: 2
   quoted-strings:
