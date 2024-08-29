@@ -21,4 +21,4 @@ rules:
     spaces: 2
   quoted-strings:
     quote-type: double
-    required: only-when-needed
+    required: false
