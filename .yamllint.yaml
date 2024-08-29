@@ -1,6 +1,7 @@
 ---
 ignore: |
   *.sops.*
+  rendered/
 extends: default
 rules:
   truthy:
